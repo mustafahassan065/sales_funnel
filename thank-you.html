@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | EP Fitness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        ep: { red: '#DC2626', dark: '#0A0A0A', gray: '#1A1A1A', light: '#F5F5F5' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background:rgba(255,255,255,0.05); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.1) }
+        .gradient-text { background:linear-gradient(135deg,#DC2626,#F59E0B); -webkit-background-clip:text; -webkit-text-fill-color:transparent }
+        .confetti { position:fixed; width:10px; height:10px; animation:confetti-fall 3s ease-out forwards }
+        @keyframes confetti-fall { 0%{transform:translateY(-100vh) rotate(0deg); opacity:1} 100%{transform:translateY(100vh) rotate(720deg); opacity:0} }
+    </style>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','YOUR_PIXEL_ID');fbq('track','Lead');
+    </script>
+<base target="_blank">
+</head>
+<body class="bg-ep-dark text-white font-sans antialiased min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-2xl w-full">
+        <div class="glass rounded-3xl p-8 md:p-12 text-center">
+            <div class="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
+                <i class="fas fa-check-circle text-green-400 text-5xl"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black mb-4">Thank You!</h1>
+            <p class="text-xl text-gray-400 mb-8">Your assessment has been submitted successfully.</p>
+
+            <div class="bg-ep-dark rounded-2xl p-6 mb-8 text-left border border-white/10">
+                <h3 class="font-bold text-lg mb-4 flex items-center">
+                    <i class="fas fa-list-check text-ep-red mr-2"></i> What happens next:
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-ep-red rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold text-sm">1</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">We Review Your Assessment</h4>
+                            <p class="text-gray-400 text-sm">Coach Emman or Coach EJ will review your goals, current fitness level, and health information.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-ep-red/50 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold text-sm">2</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Create Your Personalized Plan</h4>
+                            <p class="text-gray-400 text-sm">Within 24-48 hours, we build a training and nutrition plan tailored specifically to you.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-ep-red/30 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold text-sm">3</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Delivered to Your Inbox</h4>
+                            <p class="text-gray-400 text-sm">You will receive your complete program via email with detailed instructions to get started.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-ep-red/20 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-bold text-sm">4</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Start Your Transformation</h4>
+                            <p class="text-gray-400 text-sm">Begin your journey with structured training, practical nutrition, and ongoing support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <p class="text-gray-400 mb-4">Questions? Reach out to us directly:</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:epfitness24@gmail.com" class="inline-flex items-center space-x-2 glass hover:bg-white/10 text-white px-6 py-3 rounded-full font-semibold transition-all">
+                        <i class="fas fa-envelope text-ep-red"></i>
+                        <span>epfitness24@gmail.com</span>
+                    </a>
+                    <a href="mailto:ejukulele@gmail.com" class="inline-flex items-center space-x-2 glass hover:bg-white/10 text-white px-6 py-3 rounded-full font-semibold transition-all">
+                        <i class="fas fa-envelope text-ep-red"></i>
+                        <span>ejukulele@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-ep-red/10 rounded-2xl p-6 border border-ep-red/20">
+                <h4 class="font-bold mb-2">Follow Us for Daily Motivation</h4>
+                <p class="text-gray-400 text-sm mb-4">Stay connected and get fitness tips, client transformations, and coaching insights.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ep-red transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ep-red transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ep-red transition-colors">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-ep-red transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-gray-500 text-sm">
+            <p>EP Fitness | Coach Emman & Coach EJ Patricio</p>
+            <p class="mt-1">2024 All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        function createConfetti() {
+            const colors = ['#DC2626', '#F59E0B', '#10B981', '#3B82F6', '#8B5CF6'];
+            for (let i = 0; i < 80; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 3 + 's';
+                confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 6000);
+            }
+        }
+        createConfetti();
+    </script>
+</body>
+</html>
