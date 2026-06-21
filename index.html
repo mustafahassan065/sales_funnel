@@ -485,6 +485,7 @@
       font-size: .75rem; color: var(--muted);
       text-transform: uppercase; letter-spacing: .1em; margin-top: 6px;
     }
+  
 
     /* ════════════════════════════════════════
        TESTIMONIALS
@@ -726,6 +727,22 @@
       .hero-ctas { flex-direction: column; }
       .btn-lg { padding: 18px 32px; }
     }
+
+    <style id="additions-css">
+  /* Video play button hover */
+  #video-placeholder:hover #play-btn {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 16px rgba(220,38,38,0.15), 0 16px 48px rgba(220,38,38,0.6);
+  }
+ 
+  /* Lead magnet grid responsive */
+  @media (max-width: 768px) {
+    .lead-magnet-grid {
+      grid-template-columns: 1fr !important;
+      gap: 36px !important;
+    }
+  }
+</style>
   </style>
 </head>
 
@@ -1258,6 +1275,256 @@
   </div>
 </section>
 
+  <section style="
+  background:var(--dark);
+  position:relative;overflow:hidden;
+  padding:80px 0;
+">
+  <!-- Background glow -->
+  <div style="
+    position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    width:700px;height:400px;
+    background:radial-gradient(ellipse, rgba(220,38,38,0.07), transparent 70%);
+    pointer-events:none;
+  "></div>
+ 
+  <div class="wrap" style="position:relative;z-index:1;">
+    <div style="
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:64px;
+      align-items:center;
+    " class="lead-magnet-grid">
+ 
+      <!-- LEFT — WHAT YOU GET -->
+      <div data-reveal>
+        <span class="eyebrow">Free Download</span>
+        <h2 class="display" style="font-size:clamp(2rem,4vw,3rem);margin-top:12px;margin-bottom:20px;">
+          GET YOUR FREE<br><span class="gradient-text">7-DAY WORKOUT PLAN</span>
+        </h2>
+        <p style="color:#9CA3AF;margin-bottom:32px;font-size:.95rem;">
+          A structured 7-day training program you can start today —
+          no gym required. Built by Coach Emman for Filipinos who
+          want to move better, burn fat, and build a base of real strength.
+        </p>
+ 
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:36px;">
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <div style="
+              width:22px;height:22px;border-radius:50%;
+              background:rgba(220,38,38,0.12);
+              display:flex;align-items:center;justify-content:center;
+              flex-shrink:0;margin-top:1px;
+            "><i class="fas fa-check" style="color:var(--red);font-size:.6rem;"></i></div>
+            <span style="font-size:.9rem;color:var(--body);">Full 7-day training schedule — beginner to intermediate</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <div style="
+              width:22px;height:22px;border-radius:50%;
+              background:rgba(220,38,38,0.12);
+              display:flex;align-items:center;justify-content:center;
+              flex-shrink:0;margin-top:1px;
+            "><i class="fas fa-check" style="color:var(--red);font-size:.6rem;"></i></div>
+            <span style="font-size:.9rem;color:var(--body);">Works at home, condo gym, or commercial gym</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <div style="
+              width:22px;height:22px;border-radius:50%;
+              background:rgba(220,38,38,0.12);
+              display:flex;align-items:center;justify-content:center;
+              flex-shrink:0;margin-top:1px;
+            "><i class="fas fa-check" style="color:var(--red);font-size:.6rem;"></i></div>
+            <span style="font-size:.9rem;color:var(--body);">Sets, reps, rest times — everything mapped out</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <div style="
+              width:22px;height:22px;border-radius:50%;
+              background:rgba(220,38,38,0.12);
+              display:flex;align-items:center;justify-content:center;
+              flex-shrink:0;margin-top:1px;
+            "><i class="fas fa-check" style="color:var(--red);font-size:.6rem;"></i></div>
+            <span style="font-size:.9rem;color:var(--body);">Instant download — delivered to your email immediately</span>
+          </li>
+        </ul>
+ 
+        <div style="
+          display:inline-flex;align-items:center;gap:8px;
+          background:rgba(34,197,94,0.07);
+          border:1px solid rgba(34,197,94,0.18);
+          border-radius:var(--r-pill);
+          padding:8px 18px;
+          font-size:.78rem;color:#4ade80;font-weight:600;
+        ">
+          <i class="fas fa-gift"></i> 100% Free — No credit card required
+        </div>
+      </div>
+ 
+      <!-- RIGHT — EMAIL CAPTURE FORM -->
+      <div data-reveal>
+        <div style="
+          background:var(--card);
+          border:1px solid var(--border);
+          border-radius:20px;
+          padding:36px 32px;
+          position:relative;overflow:hidden;
+        ">
+          <!-- Red glow top right -->
+          <div style="
+            position:absolute;top:0;right:0;
+            width:160px;height:160px;
+            background:radial-gradient(circle,rgba(220,38,38,0.1),transparent 70%);
+            pointer-events:none;
+          "></div>
+ 
+          <div style="position:relative;z-index:1;">
+            <div style="
+              display:inline-flex;align-items:center;gap:7px;
+              background:rgba(220,38,38,0.1);
+              border:1px solid rgba(220,38,38,0.2);
+              border-radius:var(--r-pill);
+              padding:5px 14px;
+              font-size:.72rem;font-weight:700;color:var(--red);
+              margin-bottom:18px;text-transform:uppercase;letter-spacing:.08em;
+            ">
+              <i class="fas fa-download"></i> Free Download
+            </div>
+ 
+            <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:6px;">
+              Get the 7-Day Plan
+            </h3>
+            <p style="font-size:.84rem;color:#6B7280;margin-bottom:24px;">
+              Enter your email and we'll send it instantly.
+            </p>
+ 
+            <!-- FORM -->
+            <form id="lm-form" onsubmit="submitLeadMagnet(event)" novalidate>
+              <div style="display:flex;flex-direction:column;gap:13px;">
+ 
+                <div style="display:flex;flex-direction:column;gap:6px;">
+                  <label style="font-size:.8rem;font-weight:600;color:var(--body);">First Name</label>
+                  <input
+                    type="text" id="lm-name"
+                    placeholder="Juan"
+                    required autocomplete="given-name"
+                    style="
+                      background:rgba(255,255,255,0.04);
+                      border:1.5px solid var(--border);
+                      border-radius:var(--r);
+                      padding:13px 16px;
+                      color:var(--white);font-size:.92rem;
+                      font-family:'Inter',sans-serif;
+                      outline:none;width:100%;
+                      transition:border-color .2s;
+                    "
+                    onfocus="this.style.borderColor='var(--red)'"
+                    onblur="this.style.borderColor='var(--border)'"
+                  >
+                </div>
+ 
+                <div style="display:flex;flex-direction:column;gap:6px;">
+                  <label style="font-size:.8rem;font-weight:600;color:var(--body);">Email Address</label>
+                  <input
+                    type="email" id="lm-email"
+                    placeholder="juan@email.com"
+                    required autocomplete="email"
+                    style="
+                      background:rgba(255,255,255,0.04);
+                      border:1.5px solid var(--border);
+                      border-radius:var(--r);
+                      padding:13px 16px;
+                      color:var(--white);font-size:.92rem;
+                      font-family:'Inter',sans-serif;
+                      outline:none;width:100%;
+                      transition:border-color .2s;
+                    "
+                    onfocus="this.style.borderColor='var(--red)'"
+                    onblur="this.style.borderColor='var(--border)'"
+                  >
+                </div>
+ 
+                <!-- Error message -->
+                <div id="lm-error" style="
+                  display:none;
+                  background:rgba(220,38,38,0.08);
+                  border:1px solid rgba(220,38,38,0.2);
+                  border-radius:8px;padding:10px 14px;
+                  font-size:.78rem;color:#f87171;
+                  align-items:center;gap:6px;
+                ">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <span id="lm-error-msg">Please fill in all fields.</span>
+                </div>
+ 
+                <button
+                  type="submit" id="lm-btn"
+                  style="
+                    background:var(--red);color:#fff;
+                    border:none;border-radius:var(--r-pill);
+                    padding:15px 24px;font-weight:700;font-size:.95rem;
+                    cursor:pointer;width:100%;
+                    display:flex;align-items:center;justify-content:center;gap:8px;
+                    font-family:'Inter',sans-serif;
+                    transition:background .2s,transform .2s;
+                    animation:pulse-red 2.5s ease-in-out infinite;
+                  "
+                  onmouseover="this.style.transform='translateY(-2px)'"
+                  onmouseout="this.style.transform='translateY(0)'"
+                >
+                  <span id="lm-btn-text">Send Me the Free Plan</span>
+                  <div id="lm-spinner" style="
+                    display:none;
+                    width:18px;height:18px;border-radius:50%;
+                    border:2.5px solid rgba(255,255,255,0.2);
+                    border-top-color:#fff;
+                    animation:spin .8s linear infinite;
+                  "></div>
+                  <i class="fas fa-arrow-right" id="lm-icon"></i>
+                </button>
+ 
+              </div>
+            </form>
+ 
+            <!-- SUCCESS STATE — hidden until submit -->
+            <div id="lm-success" style="display:none;text-align:center;padding:20px 0;">
+              <div style="
+                width:60px;height:60px;border-radius:50%;
+                background:rgba(34,197,94,0.1);
+                border:2px solid rgba(34,197,94,0.3);
+                display:flex;align-items:center;justify-content:center;
+                font-size:1.4rem;color:#22c55e;
+                margin:0 auto 16px;
+              "><i class="fas fa-check"></i></div>
+              <h4 style="font-size:1rem;font-weight:800;margin-bottom:8px;">
+                Check Your Inbox!
+              </h4>
+              <p style="font-size:.82rem;color:#6B7280;line-height:1.6;">
+                Your free 7-day plan is on its way.
+                Check your email — it should arrive within 2 minutes.
+              </p>
+              <a href="apply.html" style="
+                display:inline-flex;align-items:center;gap:6px;
+                margin-top:20px;
+                color:var(--red);font-size:.84rem;font-weight:700;
+                text-decoration:none;
+              ">
+                Ready for a personalized plan? Apply here
+                <i class="fas fa-arrow-right" style="font-size:.75rem;"></i>
+              </a>
+            </div>
+ 
+            <p style="font-size:.7rem;color:#374151;text-align:center;margin-top:12px;">
+              <i class="fas fa-lock" style="margin-right:4px;"></i>
+              No spam. Unsubscribe anytime.
+            </p>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
 <!-- ══════════════════════════════════════════
      COACHES
 ══════════════════════════════════════════ -->
@@ -1495,6 +1762,72 @@
 <!-- ══════════════════════════════════════════
      SCRIPTS
 ══════════════════════════════════════════ -->
+  <script id="additions-js">
+  // ── VIDEO — Replace YOUR_YOUTUBE_VIDEO_ID ──
+  const YOUTUBE_VIDEO_ID = 'YOUR_YOUTUBE_VIDEO_ID';
+ 
+  function loadVideo() {
+    if (YOUTUBE_VIDEO_ID === 'YOUR_YOUTUBE_VIDEO_ID') {
+      alert('Please add your YouTube video ID in the code first.');
+      return;
+    }
+    document.getElementById('video-placeholder').style.display = 'none';
+    document.getElementById('video-iframe-wrap').style.display = 'block';
+    document.getElementById('yt-iframe').src =
+      'https://www.youtube.com/embed/' + YOUTUBE_VIDEO_ID + '?autoplay=1&rel=0&color=red';
+ 
+    // Track video play
+    try { if (typeof gtag !== 'undefined') gtag('event', 'video_play', { video_id: YOUTUBE_VIDEO_ID }); } catch(e) {}
+    try { if (typeof fbq  !== 'undefined') fbq('trackCustom', 'VideoPlay'); } catch(e) {}
+  }
+ 
+  // ── LEAD MAGNET FORM ──
+  async function submitLeadMagnet(e) {
+    e.preventDefault();
+ 
+    const name  = document.getElementById('lm-name').value.trim();
+    const email = document.getElementById('lm-email').value.trim();
+    const errEl = document.getElementById('lm-error');
+    const errMsg= document.getElementById('lm-error-msg');
+ 
+    // Validate
+    if (!name) {
+      errMsg.textContent = 'Please enter your first name.';
+      errEl.style.display = 'flex'; return;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errMsg.textContent = 'Please enter a valid email address.';
+      errEl.style.display = 'flex'; return;
+    }
+    errEl.style.display = 'none';
+ 
+    // Loading state
+    const btn     = document.getElementById('lm-btn');
+    const btnText = document.getElementById('lm-btn-text');
+    const spinner = document.getElementById('lm-spinner');
+    const icon    = document.getElementById('lm-icon');
+    btnText.textContent = 'Sending...';
+    spinner.style.display = 'block';
+    icon.style.display = 'none';
+    btn.disabled = true;
+ 
+    // Submit
+    await submitLead(
+      { name, email, leadMagnet: '7-day-workout-plan' },
+      'lead_magnet'
+    );
+ 
+    // Track
+    try { if (typeof fbq  !== 'undefined') fbq('track', 'Lead', { content_name: 'Free Workout Plan' }); } catch(e) {}
+    try { if (typeof gtag !== 'undefined') gtag('event', 'generate_lead', { method: 'lead_magnet' }); } catch(e) {}
+ 
+    // Show success
+    setTimeout(() => {
+      document.getElementById('lm-form').style.display = 'none';
+      document.getElementById('lm-success').style.display = 'block';
+    }, 1000);
+  }
+</script>
 <script>
   // ── NAV SCROLL ──
   const nav = document.getElementById('main-nav');
